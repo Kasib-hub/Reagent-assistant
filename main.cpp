@@ -3,13 +3,15 @@
 using namespace std;
 
 int findNearestVolume (int c1, int c2, int v2) {
-
     while (v2 % c1 != 0) {
         v2 -= 1;
     }
-    cout << v2;
     return v2;
+}
 
+int createNeat (int c1, int c2, int v2) {
+    int v1 = c2 * v2 / c1;
+    return v1;
 }
 
 int main () {
@@ -33,7 +35,11 @@ int main () {
     int v2;
     cout << "Total volume: ";
     cin >> v2;
-    cout << endl;
 
-    v1 = findNearestVolume(c1, c2, v2);
+    cout << "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" << endl;
+    int newv2 = findNearestVolume(c1, c2, v2);
+    cout << "Total volume of solution: " << newv2 << endl;
+    c1 = createNeat (c1, c2, newv2);
+    cout << "Volume of solute needed: " << c1 << endl;
+    cout << "Volume of solvent needed: " << newv2 - c1;
 }
