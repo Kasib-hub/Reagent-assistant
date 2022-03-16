@@ -1,29 +1,39 @@
 #include <iostream>
 
-
 using namespace std;
 
-// needs to
+int findNearestVolume (int c1, int c2, int v2) {
+
+    while (v2 % c1 != 0) {
+        v2 -= 1;
+    }
+    cout << v2;
+    return v2;
+
+}
 
 int main () {
 
     // C1*V1 = C2*V2
-    int source;
+    int c1;
 
     cout << "Source concentration (1 if undiluted): ";
-    cin >> source;
+    cin >> c1;
+    cin.ignore();
 
     // create function to solve for vol needed (vol 1)
-    int neededvol;
+    int v1;
 
-    int desired;
+    int c2;
     cout << "Desired concentration: ";
-    cin >> desired;
+    cin >> c2;
+    cin.ignore();
 
     // create function to solve for nearest volume
-    int totalvol;
+    int v2;
     cout << "Total volume: ";
-    cin >> totalvol;
+    cin >> v2;
+    cout << endl;
 
-
+    v1 = findNearestVolume(c1, c2, v2);
 }
