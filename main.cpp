@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// TODO: make functions handle floats properly to 1 decimal point (tenths)
+
 int findNearestVolume (int c1, int c2, int v2) {
     while (v2 % c1 != 0) {
         v2 -= 1;
