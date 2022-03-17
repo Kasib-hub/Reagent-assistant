@@ -7,3 +7,27 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(slateblue, darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome {
+    width: 700px;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    margin-top: 50px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome h1 {
+    color: wheat;
+}
