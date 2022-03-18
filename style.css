@@ -39,6 +39,7 @@ body {
 }
 
 .math {
+    color: white;
     width: 700px;
     height: 250px;
     display: flex;
@@ -51,6 +52,20 @@ body {
     height: 250px;
     border: 2px solid wheat;
     border-radius: 15px;
+}
+
+.source p {
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.source h1 {
+
+}
+
+.source h2 {
+    
 }
 
 .solution {
