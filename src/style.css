@@ -13,3 +13,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+/* Need to format headers to center */
+table,
+th,
+td {}
