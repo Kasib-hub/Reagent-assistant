@@ -28,10 +28,15 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: center;
   height: 4rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   background-color: #ffffff;
+}
+header p {
+  margin: 0;
 }
 
 .math {
@@ -41,8 +46,25 @@ header {
   background-color: #E9D5DA;
 }
 
+.source h3 {
+  text-align: center;
+}
+.source span {
+  width: 120px;
+  text-align: center;
+}
+.source div {
+  display: flex;
+  justify-content: space-around;
+}
+
 .result {
   background-color: #B97A95;
+}
+
+.atom {
+  height: 3rem;
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
