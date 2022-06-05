@@ -29,9 +29,8 @@ body {
 
 .wrapper {
     min-height: 50vh;
-    width: 80vw;
+    width: 70vw;
     background-color: #ffffffcd;
-    padding-bottom: 20px;
     margin: 8rem auto;
     box-shadow: 0 0.5rem 2rem $grey;
     border-radius: 1rem;
@@ -40,7 +39,8 @@ body {
 header {
     display: flex;
     align-items: center;
-    height: 4rem;
+    height: 5rem;
+    padding: 20px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     background-color: #ffffff;
@@ -52,12 +52,13 @@ header {
 
 .math {
     display: flex;
-    flex: 0 0 60%;
+    flex: 1 0 60%;
     justify-content: space-evenly;
     background-color: #E9D5DA;
 }
 
-.source {
+.source,
+.solution {
 
     h3 {
         text-align: center;

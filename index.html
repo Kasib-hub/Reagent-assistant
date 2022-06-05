@@ -18,11 +18,12 @@
     <div class="wrapper">
         <header class="welcome">
             <img src="assets/Atom.png" alt="pic of atom" class="atom">
-            <p>Kasib's Reagent Assistant (title or header)</p>
+            <h2>Kasib's Reagent Assistant (title or header)</h2>
         </header>
         <div class="math">
             <div class="source">
                 <h3>Source</h3>
+
                 <div class="source-input-labels">
                     <span>Concentration</span><span>Volume</span>
                 </div>
@@ -31,12 +32,19 @@
                     <input type="text" class="source-concentration" placeholder="Source Concentration">
                     <input type="text" class="source-volume" placeholder="Source Volume">
                 </form>
-
             </div>
             <div class="solution">
-                Solution
-                <p>Concentration</p>
-                <p>Volume</p>
+                <h3>Solution</h3>
+
+                <div class="solution-input-labels">
+                    <span>Concentration</span><span>Volume</span>
+                </div>
+
+                <form action="#" class="solution">
+                    <input type="text" class="solution-concentration" placeholder="Solution Concentration">
+                    <input type="text" class="solution-volume" placeholder="Solution Volume">
+                </form>
+
             </div>
         </div>
         <div class="result">
@@ -44,9 +52,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 
