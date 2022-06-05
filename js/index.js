@@ -21,5 +21,5 @@ function show() {
     console.log(C1);
     console.log(C2);
     console.log(V2);
-    document.getElementById('final').innerHTML = C1;
+    document.getElementById('source-volume').placeholder = 'This is the final vol';
 }
