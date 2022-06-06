@@ -28,10 +28,10 @@
                     <span>Concentration</span><span>Volume</span>
                 </div>
 
-                <form action="#" class="source">
-                    <input type="number" id="source-concentration" placeholder="Source Concentration">
-                    <input id="source-volume" placeholder="Volume needed" readonly>
-                </form>
+
+                <input type="number" id="source-concentration" placeholder="Source Concentration">
+                <input id="source-volume" placeholder="Volume needed" readonly>
+
             </div>
             <div class="solution">
                 <h3>Solution</h3>
@@ -40,13 +40,17 @@
                     <span>Concentration</span><span>Volume</span>
                 </div>
 
-                <form action="#" class="solution">
-                    <input type="number" id="solution-concentration" placeholder="Final Concentration">
-                    <input type="number" id="solution-volume" placeholder="Final Volume">
-                </form>
+
+                <!-- figure out how to allow users to enter fractions -->
+                <label for="solution-concentration">Enter Concentration as a decimal: </label>
+                <input type="text" id="solution-concentration" placeholder="Final Concentration">
+                <button>Enter Concentration as a Fraction</button>
+
+                <input type="number" id="solution-volume" placeholder="Final Volume">
+
 
             </div>
-            <button type="submit" onclick="show()">Submit</button>
+            <button onclick="show()">Calculate</button>
         </div>
         <div class="result" id="final">
             Result

@@ -21,6 +21,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    font-size: 18px;
     height: 100vh;
     color: $textGrey;
 
@@ -54,11 +55,17 @@ header {
     display: flex;
     flex: 1 0 60%;
     justify-content: space-evenly;
-    background-color: #E9D5DA;
+
+    input {
+        background-color: #ffffffcd;
+    }
+
 }
 
 .source,
 .solution {
+
+    padding: 15px 0px 15px 0px;
 
     h3 {
         text-align: center;
@@ -76,5 +83,5 @@ header {
 }
 
 .result {
-    background-color: #B97A95;
+    background-color: $lightPurple;
 }

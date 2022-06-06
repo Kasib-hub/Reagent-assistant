@@ -16,10 +16,12 @@ function show() {
     let C2 = document.getElementById('solution-concentration').value;
     let V2 = document.getElementById('solution-volume').value;
 
-    checkInput(C1, C2, V2) ? console.log('all good') : console.log('need to be numbers');
+    // checkInput works as intended
+    if (checkInput(C1, C2, V2)) {
+        document.getElementById('source-volume').placeholder = C2 * V2 / C1;
+    }
 
-    console.log(C1);
-    console.log(C2);
-    console.log(V2);
-    document.getElementById('source-volume').placeholder = 'This is the final vol';
+    console.log('The values are: ' + C1 + ' ' + C2 + ' ' + V2);
 }
+
+

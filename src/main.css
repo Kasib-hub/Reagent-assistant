@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
+  font-size: 18px;
   height: 100vh;
   color: #2f3640;
   background-image: linear-gradient(to bottom right, #E9D5DA, #827397);
@@ -43,9 +44,15 @@ header p {
   display: flex;
   flex: 1 0 60%;
   justify-content: space-evenly;
-  background-color: #E9D5DA;
+}
+.math input {
+  background-color: rgba(255, 255, 255, 0.8039215686);
 }
 
+.source,
+.solution {
+  padding: 15px 0px 15px 0px;
+}
 .source h3,
 .solution h3 {
   text-align: center;
@@ -62,7 +69,7 @@ header p {
 }
 
 .result {
-  background-color: #B97A95;
+  background-color: #E9D5DA;
 }
 
 .atom {
