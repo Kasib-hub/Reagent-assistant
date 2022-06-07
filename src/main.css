@@ -72,6 +72,10 @@ header p {
   background-color: #E9D5DA;
 }
 
+footer {
+  text-align: center;
+}
+
 .atom {
   height: 3rem;
   padding-right: 1rem;
