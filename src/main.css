@@ -40,6 +40,15 @@ header p {
   margin: 0;
 }
 
+footer {
+  text-align: center;
+}
+
+.atom {
+  height: 3rem;
+  padding-right: 1rem;
+}
+
 .math {
   display: flex;
   flex-direction: column;
@@ -53,9 +62,14 @@ header p {
   margin-bottom: 20px;
   padding: 0px 10px 0px 10px;
 }
-.math .conversion-btn {
-  margin-left: 10px;
-  padding: 0px 10px 0px 10px;
+.math .fraction {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.math .fraction-btn {
+  margin-left: 20px;
+  padding: 0px 15px 0px 15px;
   border-radius: 1rem;
 }
 .math input,
@@ -64,37 +78,16 @@ header p {
   margin-left: 20px;
   font-size: 20px;
 }
-
-.source,
-.solution {
-  padding: 15px 0px 15px 0px;
+.math .denominator {
+  margin-left: 0px;
 }
-.source h3,
-.solution h3 {
-  text-align: center;
-}
-.source span,
-.solution span {
-  width: 120px;
-  text-align: center;
-}
-.source div,
-.solution div {
-  display: flex;
-  justify-content: space-around;
+.math .denominator,
+.math .numerator {
+  width: 9rem;
 }
 
 .result {
   background-color: #E9D5DA;
-}
-
-footer {
-  text-align: center;
-}
-
-.atom {
-  height: 3rem;
-  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

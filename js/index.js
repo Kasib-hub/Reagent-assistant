@@ -26,16 +26,20 @@ function show() {
 
 
 // find a way to change input to two values separated by a '/' symbol
-const buttonText = document.querySelector('.conversion-btn');
-const labelText = document.querySelector('label');
+const buttonText = document.querySelector('.fraction-btn');
 
 buttonText.addEventListener('click', () => {
     const initialButtonText = 'Enter as Fraction';
 
     if (buttonText.innerHTML.includes(initialButtonText)) {
         buttonText.innerHTML = 'Enter as Decimal or Whole Number';
+        document.querySelector('#solution-concentration').style.display = 'none';
+        document.querySelector('.nested').style.display = 'inline-block';
+
     } else {
         buttonText.innerHTML = initialButtonText;
+        document.querySelector('.nested').style.display = 'none';
+        document.querySelector('#solution-concentration').style.display = 'inline-block';
     }
 });
 
