@@ -24,26 +24,18 @@ function show() {
     console.log('The values are: ' + C1 + ' ' + C2 + ' ' + V2);
 }
 
-// const buttonToggle = () => {
-//     let button = document.querySelector('.conversion-button');
-//     if (button.value == 'dec') {
 
-//     }
-// }
-
-const buttonText = document.querySelector('.conversion-button');
+// find a way to change input to two values separated by a '/' symbol
+const buttonText = document.querySelector('.conversion-btn');
 const labelText = document.querySelector('label');
 
 buttonText.addEventListener('click', () => {
-    const initialButtonText = 'Enter Concentration as a Fraction';
-    const initialLabelText = 'Enter Concentration as a decimal: ';
+    const initialButtonText = 'Enter as Fraction';
 
     if (buttonText.innerHTML.includes(initialButtonText)) {
-        buttonText.innerHTML = 'Enter Concentration as a Decimal';
-        labelText.innerHTML = 'Enter Concentration as a Fraction: ';
+        buttonText.innerHTML = 'Enter as Decimal or Whole Number';
     } else {
         buttonText.innerHTML = initialButtonText;
-        labelText.innerHTML = initialLabelText;
     }
 });
 
