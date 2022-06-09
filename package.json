@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.6"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "reagent-assistant",
+  "description": "The reagent assistant is my ongoing project that I've been working on during my web development learning journey. It has started and stopped several times as learn something, attempt to implement, fail, and then try to plan it out again.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kasib-hub/Reagent-assistant.git"
+  },
+  "author": "Kasib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kasib-hub/Reagent-assistant/issues"
+  },
+  "homepage": "https://github.com/Kasib-hub/Reagent-assistant#readme"
+}
