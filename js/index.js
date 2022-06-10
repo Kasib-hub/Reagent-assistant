@@ -37,6 +37,7 @@ function show() {
     let C1 = sourceC1.value;
     let C2 = finalC2.value;
     let V2 = finalV2.value;
+    let V1 = document.getElementById('source-volume');
 
     if (buttonText.innerHTML.includes('Enter as Decimal')) {
         C2 = document.querySelector('.numerator').value / document.querySelector('.denominator').value;
@@ -45,10 +46,21 @@ function show() {
     // checkInput works as intended
     if (checkInput(C1, C2, V2)) {
         console.log('values are valid');
-        document.getElementById('source-volume').placeholder = C2 * V2 / C1;
+        V1.placeholder = C2 * V2 / C1;
+        V1.value = C2 * V2 / C1;
+
+        // output measurements to result div
+        let sourceName;
+        let solventName;
+        let units;
+        let output = V2 - V1.value;
+        document.querySelector('.result').innerHTML = 'Pour ' + V1.value + ' into ' + output;
     } else {
         alert('Enter valid Digits');
     }
+
+
+
 
 }
 
