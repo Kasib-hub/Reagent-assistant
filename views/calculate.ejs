@@ -1,0 +1,41 @@
+<%- include('partials/header'); -%>
+
+    <header class="welcome">
+        <img src="assets/Atom.png" alt="pic of atom" class="atom">
+        <h2>Reagent Assistant</h2>
+    </header>
+    <div class="math">
+
+
+        <label for="source-concentration">Source Concentration: </label>
+        <input type="number" name="sourceConcentration" id="source-concentration" value="<%=C1 %>">
+
+        <label for="source-volume">Source Volume: </label>
+        <input name="sourceVolume" id="source-volume" placeholder="X" readonly style="color: #5f27cd;" value="<%=V1 %>">
+
+        <label for="solution-concentration">Final Concentration: </label>
+        <div class="fraction">
+
+            <input type="number" name="solutionConcentration" id="solution-concentration" value="<%=C2 %>">
+
+            <div class=" nested" style="display: none;">
+                <input type="number" name="numerator" class="numerator">
+                <span>/</span>
+                <input type="number" name="denominator" class="denominator">
+            </div>
+
+            <button class="fraction-btn">Enter as Fraction</button>
+        </div>
+
+        <label for="solution-volume">Final Volume: </label>
+        <input type="number" name="solutionVolume" id="solution-volume" value="<%=V2 %>">
+
+        <button type=" submit" class="btn btn-info">Calculate</button>
+    </div>
+    <div class="result">
+
+        Pour <%= V1 %> of source into <%= remainder %> of Solvent.
+
+    </div>
+
+    <%- include('partials/footer'); -%>

@@ -1,0 +1,42 @@
+<%- include('partials/header'); -%>
+
+    <header class="welcome">
+        <img src="assets/Atom.png" alt="pic of atom" class="atom">
+        <h2>Reagent Assistant</h2>
+    </header>
+    <div class="math">
+
+        <form action="/" method="post" class="measurements">
+
+            <label for="source-concentration">Source Concentration: </label>
+            <input type="number" name="sourceConcentration" id="source-concentration">
+
+            <label for="source-volume">Source Volume: </label>
+            <input name="sourceVolume" id="source-volume" placeholder="X" readonly style="color: #5f27cd;">
+
+            <label for="solution-concentration">Final Concentration: </label>
+            <div class="fraction">
+                <input type="number" name="solutionConcentration" id="solution-concentration" step="any">
+
+                <div class="nested" style="display: none;">
+                    <input type="number" name="numerator" class="numerator">
+                    <span>/</span>
+                    <input type="number" name="denominator" class="denominator">
+                </div>
+
+                <button class="fraction-btn">Enter as Fraction</button>
+            </div>
+
+            <label for="solution-volume">Final Volume: </label>
+            <input type="number" name="solutionVolume" id="solution-volume">
+
+            <button type="submit" class="btn btn-info">Calculate</button>
+
+        </form>
+
+    </div>
+    <div class="result">
+        #
+    </div>
+
+    <%- include('partials/footer'); -%>
