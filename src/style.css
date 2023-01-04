@@ -65,6 +65,7 @@ footer {
 }
 .math input {
   background-color: rgba(255, 255, 255, 0.8039215686);
+  border-radius: 0.75rem;
   margin-bottom: 8px;
   padding: 0px 5px 0px 5px;
   width: 8rem;
