@@ -55,7 +55,7 @@ function show() {
         let solventName;
         let units;
         let output = V2 - V1.value;
-        document.querySelector('.result').innerHTML = `Pour ${V1.value} of source into ${output} of solvent`;
+        document.querySelector('.result').innerHTML = `Result: Pour ${V1.value} of source into ${output} of solvent`;
     } else {
         alert('Enter valid Digits');
     }
