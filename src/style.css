@@ -13,16 +13,16 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   font-size: 20px;
-  height: 100vh;
   color: #2f3640;
   background-image: linear-gradient(to bottom right, #E9D5DA, #827397);
+  background-repeat: no-repeat;
 }
 
 .wrapper {
   min-height: 40vh;
-  width: 70vw;
+  width: 65vw;
   background-color: rgba(255, 255, 255, 0.8039215686);
-  margin: 8rem auto;
+  margin: 2rem auto;
   box-shadow: 0 0.5rem 2rem #716F81;
   border-radius: 1rem;
 }
@@ -31,7 +31,7 @@ header {
   display: flex;
   align-items: center;
   height: 5rem;
-  padding: 20px;
+  padding: 14px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   background-color: #ffffff;
@@ -63,14 +63,10 @@ footer {
   flex: 1 0 60%;
   justify-content: space-evenly;
 }
-.math .measurements {
-  display: flex;
-  flex-direction: column;
-}
 .math input {
   background-color: rgba(255, 255, 255, 0.8039215686);
-  margin-bottom: 20px;
-  padding: 0px 10px 0px 10px;
+  margin-bottom: 8px;
+  padding: 0px 5px 0px 5px;
   width: 8rem;
 }
 .math .fraction {
@@ -87,18 +83,22 @@ footer {
 .math label,
 .math .btn-info {
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .math .denominator {
   margin-left: 0px;
 }
 .math .denominator,
 .math .numerator {
-  width: 4rem;
+  width: 6rem;
 }
 
 .result {
   background-color: #E9D5DA;
+}
+
+#source-volume {
+  background-color: #f7eaed;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -48,13 +48,14 @@ function show() {
         console.log('values are valid');
         V1.placeholder = C2 * V2 / C1;
         V1.value = C2 * V2 / C1;
+        V1.style.fontWeight = 600
 
         // output measurements to result div
         let sourceName;
         let solventName;
         let units;
         let output = V2 - V1.value;
-        document.querySelector('.result').innerHTML = 'Pour ' + V1.value + ' of source into ' + output + ' of solvent';
+        document.querySelector('.result').innerHTML = `Pour ${V1.value} of source into ${output} of solvent`;
     } else {
         alert('Enter valid Digits');
     }
