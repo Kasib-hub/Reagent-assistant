@@ -15,7 +15,7 @@ body {
   font-size: 20px;
   color: #2f3640;
   background-image: linear-gradient(to bottom right, #E9D5DA, #827397);
-  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .wrapper {
@@ -84,7 +84,7 @@ footer {
 .math label,
 .math .btn-info {
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 24px;
 }
 .math .denominator {
   margin-left: 0px;
