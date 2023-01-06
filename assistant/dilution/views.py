@@ -1,3 +1,19 @@
 from django.shortcuts import render
+import requests
 
 # Create your views here.
+
+# home route is making an api call to wikipedia to pull an antigen system
+# How would I get the search term from my front end? Perhaps wait until react
+def home(request):
+    message = 'The app is launched as base'
+    url = 'https://en.wikipedia.org/w/api.php'
+    search = 'Duffy_antigen_system'
+    params = f'?action=query&prop=extracts&titles={search}&format=json&exsentences=2&explaintext=1&formatversion=2'
+    response = requests.get(url + params)
+
+    # break down the json
+    data = response.json()
+    search_text = data['query']['pages'][0]
+
+    return render(request, 'dilution/base.html', {'message': message, 'data': search_text})
